@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Car Brands</title>
+</head>
+<body>
+    <h1>Car Brands</h1>
+    <a href="/brands/new">Create New Brand</a>
+    <ul>
+        <li th:each="brand : ${brands}">
+            <span th:text="${brand.brandName}"></span>
+            <a th:href="@{/brands/edit/{id}(id=${brand.id})}">Edit</a>
+            <a th:href="@{/brands/delete/{id}(id=${brand.id})}">Delete</a>
+        </li>
+    </ul>
+</body>
+</html>
+

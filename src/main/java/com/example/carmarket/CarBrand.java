@@ -1,21 +1,19 @@
 package com.example.carmarket;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 @Entity
+@Table(name = "car_brands")
 public class CarBrand {
-    
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    
+
+    @Column(nullable = false)
     private String brandName;
 
-    public CarBrand() {
-    }
+    public CarBrand() {}
 
     public CarBrand(String brandName) {
         this.brandName = brandName;

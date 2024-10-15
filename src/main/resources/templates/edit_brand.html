@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Edit Brand</title>
+</head>
+<body>
+    <h1>Edit Brand</h1>
+    <form th:action="@{/brands/update/{id}(id=${brand.id})}" th:object="${brand}" method="post">
+        <label for="brandName">Brand Name</label>
+        <input type="text" id="brandName" th:field="*{brandName}" required>
+        <button type="submit">Update</button>
+    </form>
+</body>
+</html>
+
