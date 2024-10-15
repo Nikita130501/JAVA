@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h1>Car Brands</h1>
+    <ul>
+        <li th:each="brand : ${brands}">
+            <span th:text="${brand.name}"></span>
+        </li>
+    </ul>
+</body>
+</html>
+
