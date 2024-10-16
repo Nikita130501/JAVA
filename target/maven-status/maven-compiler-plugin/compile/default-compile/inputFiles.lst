@@ -1,4 +1,5 @@
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarController.java
+/root/java_test_perenos/src/main/java/com/example/carmarket/CarPart.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarModelRepository.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarBrandService.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarService.java
@@ -6,8 +7,11 @@
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarBrand.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarModelController.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarBrandRepository.java
+/root/java_test_perenos/src/main/java/com/example/carmarket/CarPartRepository.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarModel.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarBrandController.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/Application.java
+/root/java_test_perenos/src/main/java/com/example/carmarket/CarPartService.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/HomeController.java
+/root/java_test_perenos/src/main/java/com/example/carmarket/CarPartController.java
 /root/java_test_perenos/src/main/java/com/example/carmarket/CarModelService.java
