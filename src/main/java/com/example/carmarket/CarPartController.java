@@ -58,6 +58,8 @@ public class CarPartController {
         CarPart existingPart = carPartService.getPartById(id);
         if (existingPart != null) {
             existingPart.setPartName(part.getPartName());
+            existingPart.setArticleNumber(part.getArticleNumber()); // Обновляем артикул
+            existingPart.setPrice(part.getPrice()); // Обновляем цену
             carPartService.savePart(existingPart);
         }
         return "redirect:/brands/" + existingPart.getCarModel().getCarBrand().getId() + "/models/" + modelId + "/parts";
