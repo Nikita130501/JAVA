@@ -1,0 +1,6 @@
+<h2>Добавить новую модель для бренда: ${brand.brandName}</h2>
+<form th:action="@{'/brands/' + ${brand.id} + '/models/save'}" method="post">
+    <input type="text" name="modelName" placeholder="Название модели" />
+    <button type="submit">Сохранить</button>
+</form>
+

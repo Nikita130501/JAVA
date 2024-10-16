@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Модели для бренда</title>
+</head>
+<body>
+    <h2>Модели для бренда: <span th:text="${brand.brandName}">Марка</span></h2>
+    <a th:href="@{'/brands/' + ${brand.id} + '/models/new'}">Добавить новую модель</a>
+
+    <ul>
+        <li th:each="model : ${models}">
+            <span th:text="${model.modelName}">Модель</span>
+            <a th:href="@{'/brands/' + ${brand.id} + '/models/edit/' + ${model.id}}">Редактировать</a>
+            <a th:href="@{'/brands/' + ${brand.id} + '/models/delete/' + ${model.id}}">Удалить</a>
+        </li>
+    </ul>
+</body>
+</html>
+

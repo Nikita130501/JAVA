@@ -11,6 +11,8 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/carmarket
       - SPRING_DATASOURCE_USERNAME=user
       - SPRING_DATASOURCE_PASSWORD=password
+    depends_on:
+      - db  # Добавлено для ожидания запуска базы данных
 
   db:
     image: mysql:8.0
@@ -21,4 +23,6 @@ services:
       MYSQL_PASSWORD: password
     ports:
       - "3306:3306"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 

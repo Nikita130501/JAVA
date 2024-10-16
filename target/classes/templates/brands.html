@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Car Brands</title>
+    <title>Список брендов</title>
 </head>
 <body>
-    <h1>Car Brands</h1>
-    <a href="/brands/new">Create New Brand</a>
+    <h2>Список брендов автомобилей</h2>
+
+    <a th:href="@{/brands/new}">Добавить новый бренд</a>
+
     <ul>
         <li th:each="brand : ${brands}">
             <span th:text="${brand.brandName}"></span>
-            <a th:href="@{/brands/edit/{id}(id=${brand.id})}">Edit</a>
-            <a th:href="@{/brands/delete/{id}(id=${brand.id})}">Delete</a>
+            <!-- Правильная генерация ссылки на просмотр моделей -->
+            <a th:href="@{'/brands/' + ${brand.id} + '/models'}">Просмотреть модели</a>
+            <!-- Правильная генерация ссылки на редактирование бренда -->
+            <a th:href="@{'/brands/edit/' + ${brand.id}}">Редактировать</a>
+            <!-- Правильная генерация ссылки на удаление бренда -->
+            <a th:href="@{'/brands/delete/' + ${brand.id}}">Удалить</a>
         </li>
     </ul>
 </body>

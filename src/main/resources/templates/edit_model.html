@@ -1,0 +1,6 @@
+<h2>Редактировать модель</h2>
+<form th:action="@{'/brands/' + ${brandId} + '/models/update/' + ${model.id} }" method="post">
+    <input type="text" name="modelName" th:value="${model.modelName}" />
+    <button type="submit">Обновить</button>
+</form>
+
