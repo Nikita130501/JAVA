@@ -1,12 +1,13 @@
-# Используем базовый образ с OpenJDK 17
 FROM openjdk:17-jdk-alpine
 
-# Указываем аргумент JAR_FILE, который будет содержать путь к jar-файлу
-ARG JAR_FILE=target/*.jar
+# Устанавливаем bash
+RUN apk add --no-cache bash
 
-# Копируем jar-файл в контейнер под именем app.jar
+COPY wait-for-it.sh /wait-for-it.sh
+RUN chmod +x /wait-for-it.sh
+
+ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 
-# Указываем команду для запуска Spring Boot приложения
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+ENTRYPOINT ["/wait-for-it.sh", "db", "--", "java", "-jar", "/app.jar"]
 
