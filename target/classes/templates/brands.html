@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Список брендов</title>
+    <title>Список брендов автомобилей</title>
+    <link rel="stylesheet" type="text/css" href="/css/brands/view_brands.css">
 </head>
 <body>
-    <h2>Список брендов автомобилей</h2>
+    <div class="container">
+        <div class="header">
+            <h2>Список брендов автомобилей</h2>
+            <a href="/brands/new" class="add-brand">Добавить новый бренд</a>
+        </div>
 
-    <a th:href="@{/brands/new}">Добавить новый бренд</a>
-
-    <ul>
-        <li th:each="brand : ${brands}">
-            <span th:text="${brand.brandName}"></span>
-            <!-- Правильная генерация ссылки на просмотр моделей -->
-            <a th:href="@{'/brands/' + ${brand.id} + '/models'}">Просмотреть модели</a>
-            <!-- Правильная генерация ссылки на редактирование бренда -->
-            <a th:href="@{'/brands/edit/' + ${brand.id}}">Редактировать</a>
-            <!-- Правильная генерация ссылки на удаление бренда -->
-            <a th:href="@{'/brands/delete/' + ${brand.id}}">Удалить</a>
-        </li>
-    </ul>
+        <ul class="brand-list">
+            <li th:each="brand : ${brands}">
+                <span class="brand-name" th:text="${brand.brandName}"></span>
+                <div class="action-buttons">
+                    <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-view">Просмотреть модели</a>
+                    <a th:href="@{'/brands/edit/' + ${brand.id}}" class="btn btn-edit">Редактировать</a>
+                    <a th:href="@{'/brands/delete/' + ${brand.id}}" class="btn btn-delete">Удалить</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
-

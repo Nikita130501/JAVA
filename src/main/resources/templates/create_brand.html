@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Create New Brand</title>
+    <title>Добавить новый бренд</title>
+    <!-- Подключаем CSS для страницы добавления брендов -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/brands/add_brand.css}">
 </head>
 <body>
-    <h1>Create New Brand</h1>
-    <form th:action="@{/brands/save}" th:object="${brand}" method="post">
-        <label for="brandName">Brand Name</label>
-        <input type="text" id="brandName" th:field="*{brandName}" required>
-        <button type="submit">Save</button>
-    </form>
-
-    <a th:href="@{/brands}">Вернуться ко всем брендам</a>
+    <div class="container">
+        <h2>Добавить новый бренд</h2>
+        <form th:action="@{/brands/save}" th:object="${brand}" method="post" class="form">
+            <div class="form-group">
+                <label for="brandName">Название бренда</label>
+                <input type="text" id="brandName" th:field="*{brandName}" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+        <a href="/brands" class="btn btn-secondary">Вернуться к брендам</a>
+    </div>
 </body>
 </html>
-

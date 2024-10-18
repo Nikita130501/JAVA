@@ -57,7 +57,7 @@ public class CarPartController {
     public String updatePart(@PathVariable("modelId") Long modelId, @PathVariable("id") Long id, @ModelAttribute("part") CarPart part) {
         CarPart existingPart = carPartService.getPartById(id);
         if (existingPart != null) {
-            existingPart.setPartName(part.getPartName());
+            existingPart.setPartName(part.getPartName()); // Обновляем наименование
             existingPart.setArticleNumber(part.getArticleNumber()); // Обновляем артикул
             existingPart.setPrice(part.getPrice()); // Обновляем цену
             carPartService.savePart(existingPart);
@@ -72,4 +72,3 @@ public class CarPartController {
         return "redirect:/brands/" + modelId + "/models/" + modelId + "/parts";
     }
 }
-
