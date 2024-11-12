@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Список брендов автомобилей</title>
+    <title>Список производителей</title>
     <link rel="stylesheet" type="text/css" href="/css/brands/view_brands.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h2>Список брендов автомобилей</h2>
-            <a href="/brands/new" class="add-brand">Добавить новый бренд</a>
+            <h2>Список производителей</h2>
+            <a href="/brands/new" class="add-brand">Добавить нового производителя</a>
         </div>
 
         <ul class="brand-list">
             <li th:each="brand : ${brands}">
                 <span class="brand-name" th:text="${brand.brandName}"></span>
                 <div class="action-buttons">
-                    <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-view">Просмотреть модели</a>
+                    <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-view">Просмотреть комплектующие</a>
                     <a th:href="@{'/brands/edit/' + ${brand.id}}" class="btn btn-edit">Редактировать</a>
                     <a th:href="@{'/brands/delete/' + ${brand.id}}" class="btn btn-delete">Удалить</a>
                 </div>
