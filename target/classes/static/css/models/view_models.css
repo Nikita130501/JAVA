@@ -1,25 +1,29 @@
-/* Общие стили */
+/* Общие стили для всех страниц */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #2e2e2e;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Цвет фона */
+    color: #333; /* Цвет текста */
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Растягиваем на всю высоту экрана */
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: #fff; /* Цвет фона контейнера */
+    width: 80%;
+    max-width: 800px; /* Максимальная ширина контейнера */
     padding: 25px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тень вокруг контейнера */
 }
 
 h2 {
-    color: #333;
     font-size: 24px;
     font-weight: 600;
+    color: #333; /* Цвет заголовка */
     margin-bottom: 20px;
 }
 
@@ -31,55 +35,67 @@ ul {
 
 .model-item {
     padding: 15px 20px;
-    margin-bottom: 10px;
-    background-color: #f5f8fa;
-    border: 1px solid #dde4e9;
+    margin-bottom: 15px; /* Отступ между элементами */
+    background-color: #f5f8fa; /* Цвет фона элемента списка */
+    border: 2px solid #dde4e9; /* Граница элемента */
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Анимация при наведении */
+}
+
+.model-item:hover {
+    border-color: #66c2ff; /* Цвет границы при наведении */
+    box-shadow: 0 0 10px rgba(102, 194, 255, 0.5); /* Тень при наведении */
 }
 
 .model-name {
     font-size: 18px;
     font-weight: 500;
-    color: #2e2e2e;
+    color: #2e2e2e; /* Цвет названия модели */
 }
 
 /* Кнопки действий */
 button, .action-link {
-    padding: 8px 16px;
+    padding: 10px 18px; /* Отступы для кнопок */
     font-size: 14px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
 .button-view {
-    background-color: #66c2ff;
+    background-color: #66c2ff; /* Цвет кнопки просмотра */
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень кнопки */
 }
 
 .button-view:hover {
     background-color: #4da3e3;
+    transform: scale(1.05); /* Эффект увеличения при наведении */
 }
 
 .button-edit {
-    background-color: #ffcb66;
+    background-color: #ffcb66; /* Цвет кнопки редактирования */
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень кнопки */
 }
 
 .button-edit:hover {
     background-color: #e6b34d;
+    transform: scale(1.05); /* Эффект увеличения при наведении */
 }
 
 .button-delete {
-    background-color: #ff6b6b;
+    background-color: #ff6b6b; /* Цвет кнопки удаления */
     color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Тень кнопки */
 }
 
 .button-delete:hover {
     background-color: #e35555;
+    transform: scale(1.05); /* Эффект увеличения при наведении */
 }
 

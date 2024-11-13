@@ -1,23 +1,23 @@
-/* Общие стили */
+/* Общие стили для страницы */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #2e2e2e;
+    background-color: #f0f2f5; /* Легкий серый фон */
+    color: #2e2e2e; /* Основной цвет текста */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 600px; /* Максимальная ширина контейнера */
+    margin: 0 auto; /* Центрирование */
     padding: 25px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff; /* Цвет фона контейнера */
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
 h2 {
-    color: #333;
+    color: #333; /* Цвет заголовка */
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
@@ -28,7 +28,7 @@ label {
     display: block;
     font-weight: 600;
     margin-bottom: 8px;
-    color: #5a5a5a;
+    color: #5a5a5a; /* Цвет метки */
 }
 
 input[type="text"], input[type="number"] {
@@ -37,38 +37,43 @@ input[type="text"], input[type="number"] {
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Цвет фона полей ввода */
+    margin-bottom: 20px; /* Расстояние между полями */
+    transition: border-color 0.3s, background-color 0.3s;
 }
 
 input:focus {
     outline: none;
-    border-color: #66c2ff;
-    background-color: #e9f4fb;
+    border-color: #66c2ff; /* Цвет границы при фокусе */
+    background-color: #e9f4fb; /* Цвет фона при фокусе */
 }
 
-/* Кнопки */
+/* Основная кнопка */
 button[type="submit"] {
-    background-color: #ffcb66;
+    background-color: #ffcb66; /* Оранжевый цвет кнопки */
     color: white;
     padding: 12px 25px;
     font-size: 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #e6b34d;
+    background-color: #e6b34d; /* Цвет при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки */
 }
 
+/* Вспомогательная ссылка */
 .secondary-link {
-    color: #555;
+    color: #555; /* Цвет текста ссылки */
     text-decoration: none;
     font-size: 14px;
+    transition: color 0.3s;
 }
 
 .secondary-link:hover {
-    color: #333;
+    color: #333; /* Цвет ссылки при наведении */
 }
 

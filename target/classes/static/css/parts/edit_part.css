@@ -10,17 +10,18 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 25px;
+    padding: 30px; /* Увеличен отступ для контейнера */
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px; /* Увеличен радиус скругления */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #333;
-    font-size: 24px;
+    font-size: 26px; /* Увеличен размер шрифта */
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px; /* Увеличен отступ снизу */
+    text-align: center; /* Центрирование заголовка */
 }
 
 /* Стиль формы */
@@ -37,42 +38,45 @@ label {
 
 input[type="text"], input[type="number"] {
     width: 100%;
-    padding: 12px;
+    padding: 14px; /* Увеличен внутренний отступ */
     font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: #f9f9f9;
-    transition: border-color 0.3s, background-color 0.3s;
+    transition: all 0.3s ease;
 }
 
 input[type="text"]:focus, input[type="number"]:focus {
     border-color: #66c2ff;
     background-color: #e9f4fb;
     outline: none;
+    box-shadow: 0 0 8px rgba(102, 194, 255, 0.5); /* Добавлен эффект тени */
 }
 
 /* Кнопки */
 button[type="submit"] {
     background-color: #ffcb66;
-    color: white;
-    padding: 12px 25px;
+    color: white;  
+    padding: 14px 30px; /* Увеличен размер кнопки */
     font-size: 16px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease; /* Добавлена анимация */
 }
 
 button[type="submit"]:hover {
     background-color: #e6b34d;
+    transform: scale(1.05); /* Эффект увеличения кнопки */
 }
 
+/* Ссылки */
 .secondary-link {
     display: inline-block;
     margin-top: 20px;
     background-color: #6c757d;
     color: white;
-    padding: 10px 20px;
+    padding: 12px 24px;
     border-radius: 8px;
     text-decoration: none;
     font-size: 14px;

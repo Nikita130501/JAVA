@@ -1,24 +1,24 @@
-/* Общие стили */
+/* Общие стили для страницы */
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f5f7fa;
-    color: #2e2e2e;
+    background-color: #f5f7fa; /* Легкий серо-голубой фон */
+    color: #2e2e2e; /* Цвет текста */
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 800px; /* Увеличенная максимальная ширина контейнера */
     margin: 0 auto;
     padding: 30px;
     background-color: #ffffff;
     border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Эффект легкой тени */
 }
 
 h2 {
-    color: #333;
-    font-size: 28px;
+    color: #333; /* Цвет заголовка */
+    font-size: 28px; /* Крупный заголовок */
     font-weight: 600;
     margin-bottom: 30px;
     text-align: center;
@@ -26,24 +26,25 @@ h2 {
 
 /* Стили для списка запчастей */
 ul {
-    list-style: none;
+    list-style: none; /* Убираем маркеры списка */
     padding: 0;
 }
 
 li {
     margin-bottom: 20px;
-    padding: 15px;
-    background-color: #007bff;
+    padding: 20px; /* Просторное размещение содержимого */
+    background-color: #007bff; /* Синий цвет для элементов списка */
     color: white;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 li:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Темный синий при наведении */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Более выразительная тень */
 }
 
 li span {
@@ -52,38 +53,44 @@ li span {
     font-weight: 500;
 }
 
-/* Кнопки действий */
+/* Кнопки действий в элементе списка */
 li a {
     margin-left: 10px;
     color: white;
     text-decoration: none;
     padding: 8px 15px;
-    background-color: #28a745;
+    background-color: #28a745; /* Зеленый цвет для кнопок */
     border-radius: 5px;
     font-size: 14px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
 li a:hover {
-    background-color: #218838;
+    background-color: #218838; /* Темнее при наведении */
+    transform: scale(1.05); /* Легкое увеличение кнопки */
 }
 
 /* Стиль кнопки удаления */
 .btn-delete {
-    background-color: #dc3545;
+    background-color: #dc3545; /* Красный цвет для удаления */
     padding: 8px 15px;
     border-radius: 5px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s ease;
 }
 
 .btn-delete:hover {
     background-color: #c82333;
+    transform: scale(1.05);
 }
 
 /* Кнопка возврата */
 a {
     display: inline-block;
     margin-top: 30px;
-    background-color: #6c757d;
+    background-color: #6c757d; /* Темно-серый цвет */
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
