@@ -1,19 +1,19 @@
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #1a1a1a; /* Темный фон */
+    color: #e0e0e0; /* Светлый текст */
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333; /* Темно-серый */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 .header {
@@ -25,12 +25,12 @@ body {
 
 h2 {
     margin: 0;
-    color: #444;
+    color: #f1f1f1;
 }
 
 .add-brand {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #007bff; /* Темно-синий */
     color: white;
     border-radius: 4px;
     text-decoration: none;
@@ -53,14 +53,17 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #444;
+    background-color: #444;
+    color: white;
+    border-radius: 8px;
 }
 
 .brand-list li:last-child {
     border-bottom: none;
 }
 
-/* Стиль для названий брендов */
+/* Название бренда */
 .brand-name {
     font-size: 18px;
     font-weight: bold;
@@ -72,13 +75,12 @@ h2 {
     margin-right: 10px;
 }
 
-/* Блок для кнопок */
+/* Кнопки */
 .action-buttons {
     display: flex;
     gap: 10px;
 }
 
-/* Стили для кнопок */
 .btn {
     padding: 8px 15px;
     border-radius: 4px;
@@ -123,3 +125,4 @@ h2 {
 .btn-delete:hover {
     background-color: #c82333;
 }
+

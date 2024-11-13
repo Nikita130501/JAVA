@@ -1,27 +1,27 @@
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #444;
+    color: #f1f1f1;
 }
 
-/* Стиль для списка запчастей */
+/* Стиль списка */
 ul {
     list-style: none;
     padding: 0;
@@ -30,7 +30,7 @@ ul {
 li {
     margin-bottom: 15px;
     padding: 15px;
-    background-color: #007bff;
+    background-color: #444; /* Темный фон для элементов списка */
     color: white;
     border-radius: 8px;
 }

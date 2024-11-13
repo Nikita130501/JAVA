@@ -1,27 +1,27 @@
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    background-color: #1a1a1a; /* Темный фон */
+    color: #e0e0e0; /* Светлый текст */
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 .container {
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #333; /* Темный фон */
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
     margin-bottom: 20px;
-    color: #444;
+    color: #f1f1f1;
 }
 
-/* Стиль для формы */
+/* Стиль формы */
 .form {
     margin-top: 20px;
 }
@@ -34,22 +34,24 @@ label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
+    color: #dcdcdc;
 }
 
-input[type="text"] {
+input[type="text"], input[type="number"] {
     width: 100%;
     padding: 10px;
     font-size: 14px;
     border-radius: 4px;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    border: 1px solid #444; /* Темная рамка */
+    background-color: #222;
+    color: #f1f1f1;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-/* Стиль для кнопок */
+/* Кнопки */
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #007bff; /* Темно-синий */
     color: white;
-    border: none;
     padding: 10px 20px;
     border-radius: 4px;
     font-size: 14px;
@@ -61,15 +63,17 @@ button[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-.btn-secondary {
-    background-color: #6c757d;
+a {
+    background-color: #6c757d; /* Темно-серый */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
+    display: inline-block;
     transition: background-color 0.3s ease;
 }
 
-.btn-secondary:hover {
+a:hover {
     background-color: #5a6268;
 }
+

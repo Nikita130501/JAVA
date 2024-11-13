@@ -1,76 +1,95 @@
 /* Общие стили */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #2e2e2e;
     margin: 0;
     padding: 0;
-    color: #333;
 }
 
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    margin-bottom: 20px;
-    color: #444;
+    color: #333;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-align: center;
 }
 
-/* Стиль для списка запчастей */
+/* Стили для списка запчастей */
 ul {
     list-style: none;
     padding: 0;
 }
 
 li {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 15px;
     background-color: #007bff;
     color: white;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #0056b3;
 }
 
 li span {
     display: block;
+    font-size: 16px;
+    font-weight: 500;
 }
 
+/* Кнопки действий */
 li a {
-    margin-right: 10px;
+    margin-left: 10px;
     color: white;
     text-decoration: none;
-    padding: 5px 10px;
+    padding: 8px 15px;
     background-color: #28a745;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
 }
 
 li a:hover {
     background-color: #218838;
 }
 
+/* Стиль кнопки удаления */
 .btn-delete {
     background-color: #dc3545;
+    padding: 8px 15px;
+    border-radius: 5px;
 }
 
 .btn-delete:hover {
     background-color: #c82333;
 }
 
-/* Кнопки возврата */
+/* Кнопка возврата */
 a {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: #6c757d;
     color: white;
-    padding: 10px 20px;
-    border-radius: 4px;
+    padding: 12px 25px;
+    border-radius: 8px;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    transition: background-color 0.3s;
 }
 
 a:hover {
