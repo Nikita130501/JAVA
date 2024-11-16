@@ -8,14 +8,23 @@
     <div class="container">
         <div class="header">
             <h2>Список производителей</h2>
-            <a href="/brands/new" class="add-brand">Добавить нового производителя</a>
-        </div>
+<a href="/brands/new" class="add-brand">Добавить нового производителя</a>
+
+
+            <!-- Кнопка для перехода на страницу сборки компьютера (для общего доступа, не привязанной к конкретному бренду) -->
+ 
+
+
+
+     
+ </div>
 
         <ul class="brand-list">
             <li th:each="brand : ${brands}">
                 <span class="brand-name" th:text="${brand.brandName}"></span>
                 <div class="action-buttons">
-                    <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-view">Просмотреть производителей</a>
+                    <!-- Удалена кнопка "Собрать компьютер" для каждого бренда -->
+                    <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-view">Просмотреть модели</a>
                     <a th:href="@{'/brands/edit/' + ${brand.id}}" class="btn btn-edit">Редактировать</a>
                     <a th:href="@{'/brands/delete/' + ${brand.id}}" class="btn btn-delete">Удалить</a>
                 </div>
@@ -24,3 +33,4 @@
     </div>
 </body>
 </html>
+

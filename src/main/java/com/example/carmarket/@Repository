@@ -1,0 +1,3 @@
+public interface ComputerRepository extends JpaRepository<Computer, Long> {
+}
+

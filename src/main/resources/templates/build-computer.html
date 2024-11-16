@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Сборка компьютера</title>
+</head>
+<body>
+    <h1>Выберите параметры для сборки компьютера</h1>
+
+    <form action="/build-computer" method="post">
+        <label for="brand">Бренд:</label>
+        <select id="brand" name="brand">
+            <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.brandName}"></option>
+        </select>
+
+        <label for="model">Модель:</label>
+        <select id="model" name="modelId"> <!-- Изменено на modelId, чтобы совпадало с контроллером -->
+            <option th:each="model : ${models}" th:value="${model.id}" th:text="${model.modelName}"></option> <!-- Исправлено на modelName -->
+        </select>
+
+        <label for="part">Комплектующие:</label>
+        <select id="part" name="partId"> <!-- Изменено на partId, чтобы совпадало с контроллером -->
+            <option th:each="part : ${parts}" th:value="${part.id}" th:text="${part.partName}"></option> <!-- Исправлено на partName -->
+        </select>
+
+        <button type="submit">Собрать компьютер</button>
+    </form>
+
+    <!-- Если выбраны параметры для сборки -->
+    <div th:if="${selectedBrand != null}">
+        <h2>Собранный компьютер:</h2>
+        <p><strong>Бренд:</strong> <span th:text="${selectedBrand.brandName}"></span></p> <!-- Исправлено на brandName -->
+        <p><strong>Модель:</strong> <span th:text="${selectedModel.modelName}"></span></p> <!-- Исправлено на modelName -->
+        <p><strong>Комплектующие:</strong> <span th:text="${selectedPart.partName}"></span></p> <!-- Исправлено на partName -->
+    </div>
+</body>
+</html>
+

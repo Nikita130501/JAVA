@@ -1,164 +1,76 @@
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #1a1a1a; /* Темный фон */
+    color: #e0e0e0; /* Светлый текст */
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
 .container {
-    background-color: #fff;
-    width: 80%;
     max-width: 600px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #333; /* Темно-серый фон */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6); /* Темная тень */
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: 600;
-    color: #333;
     margin-bottom: 20px;
+    color: #f1f1f1; /* Светлый текст */
 }
 
-/* Стиль формы */
-form {
-    margin-top: 20px;
+/* Стили формы */
+.form-group {
+    margin-bottom: 15px;
 }
 
 label {
     display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #5a5a5a;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #dcdcdc; /* Светлый текст для меток */
 }
 
-input[type="text"],
-input[type="number"] {
+input[type="text"] {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: border-color 0.3s, background-color 0.3s;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #444; /* Темная рамка */
+    background-color: #222; /* Темный фон для инпутов */
+    color: #f1f1f1; /* Светлый текст в инпутах */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus {
-    border-color: #66c2ff;
-    background-color: #e9f4fb;
-    outline: none;
-}
-
-/* Кнопки */
+/* Стили для кнопок */
 button[type="submit"] {
-    background-color: #66c2ff;
+    background-color: #007bff; /* Темно-синий */
     color: white;
-    padding: 12px 25px;
-    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 4px;
     border: none;
-    border-radius: 8px;
+    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #4da3e3;
+    background-color: #0056b3; /* Более темный синий */
 }
 
-/* Вспомогательная ссылка */
-.secondary-link {
-    display: inline-block;
-    margin-top: 20px;
-    background-color: #6c757d;
+/* Стили для ссылок */
+.btn-secondary {
+    background-color: #6c757d; /* Темно-серый */
     color: white;
     padding: 10px 20px;
-    border-radius: 8px;
+    border-radius: 4px;
     text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s;
+    display: inline-block;
 }
 
-.secondary-link:hover {
-    background-color: #5a6268;
-}
-
-/* Стили для списка элементов */
-.item-list {
-    list-style: none;
-    padding: 0;
-    margin: 20px 0;
-}
-
-.item-list li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f9f9f9;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.item-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-}
-
-.action-buttons {
-    display: flex;
-    gap: 10px;
-}
-
-/* Кнопки для действий с элементами */
-.btn-view {
-    background-color: #66c2ff;
-    color: white;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn-view:hover {
-    background-color: #4da3e3;
-}
-
-.btn-edit {
-    background-color: #ffc107;
-    color: white;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn-edit:hover {
-    background-color: #e6b800;
-}
-
-.btn-delete {
-    background-color: #f44336;
-    color: white;
-    padding: 8px 16px;
-    font-size: 14px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.btn-delete:hover {
-    background-color: #d32f2f;
+.btn-secondary:hover {
+    background-color: #5a6268; /* Более темный серый */
 }
 

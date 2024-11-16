@@ -1,8 +1,8 @@
 /* Общие стили */
 body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #2e2e2e;
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     margin: 0;
     padding: 0;
 }
@@ -10,18 +10,15 @@ body {
 .container {
     max-width: 600px;
     margin: 0 auto;
-    padding: 30px; /* Увеличен отступ для контейнера */
-    background-color: #ffffff;
-    border-radius: 12px; /* Увеличен радиус скругления */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #333;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
 }
 
 h2 {
-    color: #333;
-    font-size: 26px; /* Увеличен размер шрифта */
-    font-weight: 600;
-    margin-bottom: 30px; /* Увеличен отступ снизу */
-    text-align: center; /* Центрирование заголовка */
+    margin-bottom: 20px;
+    color: #f1f1f1;
 }
 
 /* Стиль формы */
@@ -31,59 +28,48 @@ form {
 
 label {
     display: block;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #5a5a5a;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #dcdcdc;
 }
 
 input[type="text"], input[type="number"] {
     width: 100%;
-    padding: 14px; /* Увеличен внутренний отступ */
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
-}
-
-input[type="text"]:focus, input[type="number"]:focus {
-    border-color: #66c2ff;
-    background-color: #e9f4fb;
-    outline: none;
-    box-shadow: 0 0 8px rgba(102, 194, 255, 0.5); /* Добавлен эффект тени */
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #f1f1f1;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Кнопки */
 button[type="submit"] {
-    background-color: #ffcb66;
-    color: white;  
-    padding: 14px 30px; /* Увеличен размер кнопки */
-    font-size: 16px;
-    border: none;
-    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s ease; /* Добавлена анимация */
+    transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #e6b34d;
-    transform: scale(1.05); /* Эффект увеличения кнопки */
+    background-color: #0056b3;
 }
 
-/* Ссылки */
-.secondary-link {
-    display: inline-block;
-    margin-top: 20px;
+a {
     background-color: #6c757d;
-    color: white;
-    padding: 12px 24px;
-    border-radius: 8px;
     text-decoration: none;
-    font-size: 14px;
-    transition: background-color 0.3s;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
-.secondary-link:hover {
+a:hover {
     background-color: #5a6268;
 }
 

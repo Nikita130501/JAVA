@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Комплектующие для производителя</title>
+    <title>Комплектующие для модели</title>
     <link rel="stylesheet" type="text/css" href="/css/models/view_models.css">
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h2>Коплектующие для производителя: <span th:text="${brand.brandName}">Производитель</span></h2>
+            <h2>Коплектующие для модели: <span th:text="${brand.brandName}">модель</span></h2>
             <a th:href="@{'/brands/' + ${brand.id} + '/models/new'}" class="add-model">Добавить новую коплектующую</a>
         </div>
 
         <ul class="model-list">
             <li th:each="model : ${models}">
-                <span class="model-name" th:text="${model.modelName}">Комплектующая</span>
+                <span class="model-name" th:text="${model.modelName}">Модель</span>
                 <div class="action-buttons">
                     <a th:href="@{'/brands/' + ${brand.id} + '/models/edit/' + ${model.id}}"
                        class="btn btn-edit">Редактировать</a>
                     <a th:href="@{'/brands/' + ${brand.id} + '/models/delete/' + ${model.id}}"
                        class="btn btn-delete">Удалить</a>
                     <a th:href="@{'/brands/' + ${brand.id} + '/models/' + ${model.id} + '/parts'}"
-                       class="btn btn-view-parts">Просмотреть модели</a>
+                       class="btn btn-view-parts">Просмотреть комплектующей</a>
                 </div>
             </li>
         </ul>
 
-        <a th:href="@{/brands}" class="btn btn-back">Вернуться к производителям</a>
+        <a th:href="@{/brands}" class="btn btn-back">Вернуться к моделям</a>
     </div>
 </body>
 </html>

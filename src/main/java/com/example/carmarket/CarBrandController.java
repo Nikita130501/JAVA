@@ -51,5 +51,13 @@ public class CarBrandController {
         carBrandService.deleteBrand(id);
         return "redirect:/brands";
     }
+
+    // Новый метод для перехода на страницу сборки компьютера
+    @GetMapping("/{brandId}/build-computer")
+    public String buildComputerPage(@PathVariable("brandId") Long brandId, Model model) {
+        model.addAttribute("brandId", brandId);
+        // Передаем brandId для использования на странице сборки
+        return "build_computer"; // Это имя страницы сборки компьютера
+    }
 }
 

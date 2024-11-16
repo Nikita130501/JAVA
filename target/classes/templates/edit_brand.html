@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Редактировать производителя</title>
-    <!-- Подключаем CSS для страницы редактирования производителя -->
+    <!-- Подключаем CSS для страницы редактирования моделей -->
     <link rel="stylesheet" type="text/css" th:href="@{/css/brands/edit_brand.css}">
 </head>
 <body>
@@ -10,7 +10,7 @@
         <h2>Редактировать производителя</h2>
         <form th:action="@{/brands/update/{id}(id=${brand.id})}" th:object="${brand}" method="post" class="form">
             <div class="form-group">
-                <label for="brandName">Название производителя</label>
+                <label for="brandName">Название модели</label>
                 <input type="text" id="brandName" th:field="*{brandName}" class="form-control" required>
             </div>
             <button type="submit" class="btn btn-primary">Сохранить изменения</button>
