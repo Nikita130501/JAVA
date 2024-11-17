@@ -19,4 +19,5 @@
 /root/JAVA/src/main/java/com/example/carmarket/CarBrand.java
 /root/JAVA/src/main/java/com/example/carmarket/ComputerBuildRepository.java
 /root/JAVA/src/main/java/com/example/carmarket/BuildComputerController.java
+/root/JAVA/src/main/java/com/example/carmarket/ViewComputerBuildsController.java
 /root/JAVA/src/main/java/com/example/carmarket/CarModelService.java

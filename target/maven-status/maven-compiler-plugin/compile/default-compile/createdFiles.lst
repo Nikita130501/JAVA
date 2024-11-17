@@ -17,6 +17,7 @@ com/example/carmarket/CarController.class
 com/example/carmarket/CarBrandRepository.class
 com/example/carmarket/CarBrandController.class
 com/example/carmarket/CarModelService.class
+com/example/carmarket/controller/ViewComputerBuildsController.class
 com/example/carmarket/CarModelRepository.class
 com/example/carmarket/CarService.class
 com/example/carmarket/CarModelController.class

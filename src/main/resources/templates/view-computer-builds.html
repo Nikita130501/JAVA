@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Saved Computer Builds</title>
+</head>
+<body>
+    <h1>Saved Computer Builds</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Motherboard</th>
+                <th>Processor</th>
+                <th>RAM</th>
+                <th>GPU</th>
+                <th>PSU</th>
+                <th>Storage</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="build : ${builds}">
+                <td th:text="${build['Motherboard']}"></td>
+                <td th:text="${build['Processor']}"></td>
+                <td th:text="${build['RAM']}"></td>
+                <td th:text="${build['GPU']}"></td>
+                <td th:text="${build['PSU']}"></td>
+                <td th:text="${build['Storage']}"></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
+
