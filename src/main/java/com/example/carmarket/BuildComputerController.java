@@ -52,18 +52,20 @@ public class BuildComputerController {
         return "build-computer";
     }
 
-    @PostMapping("/get-models")
-    public String getModels(@RequestParam("brandId") Long brandId, Model model) {
-        List<CarModel> models = computerBuildingService.getModelsByBrand(brandId);
-        model.addAttribute("models", models);
-        return "build-computer :: modelList"; // Обновляем только список моделей
-    }
+@PostMapping("/get-models")
+public String getModels(@RequestParam("brandId") Long brandId, Model model) {
+    List<CarModel> models = computerBuildingService.getModelsByBrand(brandId);
+    model.addAttribute("models", models);
+    return "fragments :: modelOptions"; // Новый фрагмент для списка моделей
+}
 
-    @PostMapping("/get-parts")
-    public String getParts(@RequestParam("modelId") Long modelId, Model model) {
-        List<CarPart> parts = computerBuildingService.getPartsByModel(modelId);
-        model.addAttribute("parts", parts);
-        return "build-computer :: partList"; // Обновляем только список комплектующих
-    }
+@PostMapping("/get-parts")
+public String getParts(@RequestParam("modelId") Long modelId, Model model) {
+    List<CarPart> parts = computerBuildingService.getPartsByModel(modelId);
+    model.addAttribute("parts", parts);
+    return "fragments :: partOptions"; // Новый фрагмент для списка комплектующих
+}
+
+
 }
 

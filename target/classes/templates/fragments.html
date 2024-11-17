@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Фрагменты</title>
+</head>
+<body>
+    <!-- Фрагмент для моделей -->
+    <th:block th:fragment="modelOptions">
+        <option value="">Выберите модель</option>
+        <option th:each="model : ${models}" th:value="${model.id}" th:text="${model.modelName}"></option>
+    </th:block>
+
+    <!-- Фрагмент для комплектующих -->
+    <th:block th:fragment="partOptions">
+        <option value="">Выберите комплектующие</option>
+        <option th:each="part : ${parts}" th:value="${part.id}" th:text="${part.partName}"></option>
+    </th:block>
+</body>
+</html>
+
