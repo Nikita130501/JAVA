@@ -5,11 +5,14 @@ com/example/carmarket/CarModel.class
 com/example/carmarket/CarPartService.class
 com/example/carmarket/HomeController.class
 com/example/carmarket/CarPartController.class
+com/example/carmarket/CompSbor.class
 com/example/carmarket/CarPart.class
 com/example/carmarket/Application.class
+com/example/carmarket/controller/ComputerSborController.class
 com/example/carmarket/CarBrand.class
 com/example/carmarket/service/ComputerBuildingService.class
 com/example/carmarket/CarPartRepository.class
+com/example/carmarket/ComputerBuildRepository.class
 com/example/carmarket/CarController.class
 com/example/carmarket/CarBrandRepository.class
 com/example/carmarket/CarBrandController.class

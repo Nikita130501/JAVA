@@ -6,6 +6,7 @@
 /root/JAVA/src/main/java/com/example/carmarket/CarRepository.java
 /root/JAVA/src/main/java/com/example/carmarket/CarModel.java
 /root/JAVA/src/main/java/com/example/carmarket/CarBrandService.java
+/root/JAVA/src/main/java/com/example/carmarket/ComputerSborController.java
 /root/JAVA/src/main/java/com/example/carmarket/CarPartController.java
 /root/JAVA/src/main/java/com/example/carmarket/CarPart.java
 /root/JAVA/src/main/java/com/example/carmarket/CarModelController.java
@@ -13,7 +14,9 @@
 /root/JAVA/src/main/java/com/example/carmarket/CarPartRepository.java
 /root/JAVA/src/main/java/com/example/carmarket/ComputerBuildingService.java
 /root/JAVA/src/main/java/com/example/carmarket/CarBrandRepository.java
+/root/JAVA/src/main/java/com/example/carmarket/CompSbor.java
 /root/JAVA/src/main/java/com/example/carmarket/HomeController.java
 /root/JAVA/src/main/java/com/example/carmarket/CarBrand.java
+/root/JAVA/src/main/java/com/example/carmarket/ComputerBuildRepository.java
 /root/JAVA/src/main/java/com/example/carmarket/BuildComputerController.java
 /root/JAVA/src/main/java/com/example/carmarket/CarModelService.java

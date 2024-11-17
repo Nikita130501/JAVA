@@ -7,7 +7,7 @@
 <body>
     <h1>Сборка компьютера</h1>
 
-    <form action="/build-computer" method="post">
+    <form action="/save-computer-sbor" method="post">
         <!-- 1) Материнская плата -->
         <div>
             <h3>1) Материнская плата</h3>
@@ -158,8 +158,8 @@
 
             // Инициализация для всех 6 позиций
             for (let i = 1; i <= 6; i++) {
-                updateModels(`#brand${i}`, `#model${i}`, `#part${i}`);
-                updateParts(`#model${i}`, `#part${i}`);
+                updateModels('#brand' + i, '#model' + i, '#part' + i);
+                updateParts('#model' + i, '#part' + i);
             }
         });
     </script>
