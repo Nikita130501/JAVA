@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Добавить новую модель</title>
+    <title>Добавить новую комплектующую</title>
     <link rel="stylesheet" type="text/css" href="/css/models/create_model.css">
 </head>
 <body>
     <div class="container">
-        <h2>Добавить новую модель для бренда: <span th:text="${brand.brandName}"></span></h2>
+        <h2>Добавить новую комплектующую для производителя: <span th:text="${brand.brandName}"></span></h2>
 
         <form th:action="@{'/brands/' + ${brand.id} + '/models/save'}" th:object="${model}" method="post" class="form">
             <div class="form-group">
-                <label for="modelName">Название модели</label>
+                <label for="modelName">Название комплектующей</label>
                 <input type="text" id="modelName" th:field="*{modelName}" required>
             </div>
             <button type="submit" class="btn btn-submit">Сохранить</button>
-            <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-secondary">Вернуться к моделям</a>
+            <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-secondary">Вернуться к комплектующим</a>
         </form>
     </div>
 </body>

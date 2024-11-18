@@ -2,13 +2,21 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>COMPUTER</title>
+    <link rel="stylesheet" type="text/css" href="/css/home.css">
 </head>
 <body>
-    <h1>Welcome to the COMPAGREGATOR</h1>
-    <p th:text="${message}"></p>
-  <form action="/build-computer" method="get">
-        <button type="submit">Go to Computer Build</button>
-    </form>
+    <div class="container">
+        <h1>Каталог Компьютерный</h1>
+        <p th:text="${message}"></p>
+        
+        <div class="button-group">
+            <form action="/build-computer" method="get">
+                <button type="submit" class="btn">Собрать компьютер</button>
+            </form>
+            <a href="/brands" class="btn">Оборудование</a>
+            <a href="/view-computer-builds" class="btn">Посмотреть сборки</a>
+        </div>
+    </div>
 </body>
 </html>
 

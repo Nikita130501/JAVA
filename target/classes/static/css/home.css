@@ -1,0 +1,70 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Светло-серый фон */
+    color: #333; /* Тёмный текст */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff; /* Белый фон */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+h1 {
+    font-size: 28px;
+    color: #007bff; /* Синий текст */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #555; /* Средний серый */
+    margin-bottom: 30px;
+}
+
+/* Группа кнопок */
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+/* Кнопки */
+.btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff; /* Синий */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Тёмно-синий */
+    transform: translateY(-2px);
+}
+
+form .btn {
+    display: inline-block;
+}
+
+a.btn {
+    display: inline-block;
+}
+

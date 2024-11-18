@@ -1,7 +1,7 @@
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
+    background-color: #91918d;
     color: #e0e0e0;
     margin: 0;
     padding: 0;
@@ -72,4 +72,3 @@ a {
 a:hover {
     background-color: #5a6268;
 }
-

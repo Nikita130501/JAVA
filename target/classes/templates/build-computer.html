@@ -5,126 +5,129 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <h1>Сборка компьютера</h1>
 
+    <h1>Сборка компьютера</h1>
+<a href="http://176.124.200.228:8080/" class="btn-home">На главную</a>
+<link rel="stylesheet" type="text/css" href="/css/build-computer.css">
     <form action="/save-computer-sbor" method="post">
         <!-- 1) Материнская плата -->
         <div>
             <h3>1) Материнская плата</h3>
-            <label for="brand1">Бренд:</label>
+            <label for="brand1">Производитель:</label>
             <select id="brand1" name="brand1">
                 <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.brandName}"></option>
             </select>
 
-            <label for="model1">Модель:</label>
+            <label for="model1">Комплектующая:</label>
             <select id="model1" name="modelId1">
-                <option value="">Сначала выберите бренд</option>
+                <option value="">Сначала выберите производителя</option>
             </select>
 
-            <label for="part1">Комплектующая:</label>
+            <label for="part1">Модель:</label>
             <select id="part1" name="partId1">
-                <option value="">Сначала выберите модель</option>
+                <option value="">Сначала выберите комплектующую</option>
             </select>
         </div>
 
         <!-- 2) Процессор -->
         <div>
             <h3>2) Процессор</h3>
-            <label for="brand2">Бренд:</label>
+            <label for="brand2">Производитель:</label>
             <select id="brand2" name="brand2">
                 <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.brandName}"></option>
             </select>
 
-            <label for="model2">Модель:</label>
+            <label for="model2">Комплектующая:</label>
             <select id="model2" name="modelId2">
-                <option value="">Сначала выберите бренд</option>
+                <option value="">Сначала выберите производителя</option>
             </select>
 
-            <label for="part2">Комплектующая:</label>
+            <label for="part2">Модель:</label>
             <select id="part2" name="partId2">
-                <option value="">Сначала выберите модель</option>
+                <option value="">Сначала выберите комплектующую</option>
             </select>
         </div>
 
         <!-- 3) Оперативная память -->
         <div>
             <h3>3) Оперативная память</h3>
-            <label for="brand3">Бренд:</label>
+            <label for="brand3">Производитель:</label>
             <select id="brand3" name="brand3">
                 <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.brandName}"></option>
             </select>
 
-            <label for="model3">Модель:</label>
+            <label for="model3">Комплектующая:</label>
             <select id="model3" name="modelId3">
-                <option value="">Сначала выберите бренд</option>
+                <option value="">Сначала выберите производителя</option>
             </select>
 
-            <label for="part3">Комплектующая:</label>
+            <label for="part3">Модель:</label>
             <select id="part3" name="partId3">
-                <option value="">Сначала выберите модель</option>
+                <option value="">Сначала выберите комплектующую</option>
             </select>
         </div>
 
         <!-- 4) Видеокарта -->
         <div>
             <h3>4) Видеокарта</h3>
-            <label for="brand4">Бренд:</label>
+            <label for="brand4">Производитель:</label>
             <select id="brand4" name="brand4">
                 <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.brandName}"></option>
             </select>
 
-            <label for="model4">Модель:</label>
+            <label for="model4">Комплектующая:</label>
             <select id="model4" name="modelId4">
-                <option value="">Сначала выберите бренд</option>
+                <option value="">Сначала выберите производителя</option>
             </select>
 
-            <label for="part4">Комплектующая:</label>
+            <label for="part4">Модель:</label>
             <select id="part4" name="partId4">
-                <option value="">Сначала выберите модель</option>
+                <option value="">Сначала выберите комплектующую</option>
             </select>
         </div>
 
         <!-- 5) Блок питания -->
         <div>
             <h3>5) Блок питания</h3>
-            <label for="brand5">Бренд:</label>
+            <label for="brand5">Производитель:</label>
             <select id="brand5" name="brand5">
                 <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.brandName}"></option>
             </select>
 
-            <label for="model5">Модель:</label>
+            <label for="model5">Комплектующая:</label>
             <select id="model5" name="modelId5">
-                <option value="">Сначала выберите бренд</option>
+                <option value="">Сначала выберите производителя</option>
             </select>
 
-            <label for="part5">Комплектующая:</label>
+            <label for="part5">Модель:</label>
             <select id="part5" name="partId5">
-                <option value="">Сначала выберите модель</option>
+                <option value="">Сначала выберите комплектующую</option>
             </select>
         </div>
 
         <!-- 6) Накопитель -->
         <div>
             <h3>6) Накопитель</h3>
-            <label for="brand6">Бренд:</label>
+            <label for="brand6">Производитель:</label>
             <select id="brand6" name="brand6">
                 <option th:each="brand : ${brands}" th:value="${brand.id}" th:text="${brand.brandName}"></option>
             </select>
 
-            <label for="model6">Модель:</label>
+            <label for="model6">Комплектующая:</label>
             <select id="model6" name="modelId6">
-                <option value="">Сначала выберите бренд</option>
+                <option value="">Сначала выберите производителя</option>
             </select>
 
-            <label for="part6">Комплектующая:</label>
+            <label for="part6">Модель:</label>
             <select id="part6" name="partId6">
-                <option value="">Сначала выберите модель</option>
+                <option value="">Сначала выберите комплектующую</option>
             </select>
         </div>
 
         <button type="submit">Собрать компьютер</button>
     </form>
 
+        
     <script>
         $(document).ready(function () {
             // Универсальные функции для обновления списков
@@ -134,11 +137,11 @@
                     if (brandId) {
                         $.post('/get-models', {brandId: brandId}, function (data) {
                             $(modelSelector).html(data);
-                            $(partSelector).html('<option value="">Сначала выберите модель</option>');
+                            $(partSelector).html('<option value="">Сначала выберите комплектующую</option>');
                         });
                     } else {
-                        $(modelSelector).html('<option value="">Сначала выберите бренд</option>');
-                        $(partSelector).html('<option value="">Сначала выберите модель</option>');
+                        $(modelSelector).html('<option value="">Сначала выберите производителя</option>');
+                        $(partSelector).html('<option value="">Сначала выберите комплектующую</option>');
                     }
                 });
             }
@@ -151,7 +154,7 @@
                             $(partSelector).html(data);
                         });
                     } else {
-                        $(partSelector).html('<option value="">Сначала выберите модель</option>');
+                        $(partSelector).html('<option value="">Сначала выберите комплектующую</option>');
                     }
                 });
             }

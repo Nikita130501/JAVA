@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Редактировать модель</title>
+    <title>Редактировать комплектующую</title>
     <link rel="stylesheet" th:href="@{/css/models/edit_model.css}" />
 </head>
 <body>
     <div class="container">
-        <h2>Редактировать модель</h2>
+        <h2>Редактировать комплектующую</h2>
         <form th:action="@{|/brands/${brandId}/models/update/${model.id}|}" method="post">
             <div class="form-group">
-                <label for="modelName">Название модели</label>
+                <label for="modelName">Название комплектующей</label>
                 <input type="text" id="modelName" name="modelName" th:value="${model.modelName}" required />
             </div>
             <button type="submit" class="btn btn-submit">Обновить</button>
-            <a th:href="@{'/brands/' + ${brandId} + '/models'}" class="btn btn-secondary">Вернуться к моделям</a>
+            <a th:href="@{'/brands/' + ${brandId} + '/models'}" class="btn btn-secondary">Вернуться к комплектующим</a>
         </form>
     </div>
 </body>

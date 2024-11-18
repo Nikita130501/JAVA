@@ -1,21 +1,27 @@
 /* Общие стили */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+    background-color: #f9f9f9; /* Светлый фон */
+    color: #333; /* Тёмный текст */
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Центрирование по высоте */
 }
 
+/* Контейнер */
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #333;
+    background-color: #fff; /* Белый фон */
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
 }
 
+/* Заголовок */
 .header {
     display: flex;
     justify-content: space-between;
@@ -25,12 +31,13 @@ body {
 
 h2 {
     margin: 0;
-    color: #f1f1f1;
+    color: #333; /* Тёмный текст */
 }
 
+/* Кнопка добавления модели */
 .add-model {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #007bff; /* Синий */
     color: white;
     border-radius: 4px;
     text-decoration: none;
@@ -39,7 +46,7 @@ h2 {
 }
 
 .add-model:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Тёмно-синий */
 }
 
 /* Список моделей */
@@ -53,9 +60,9 @@ h2 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #444;
-    background-color: #444;
-    color: white;
+    border-bottom: 1px solid #ddd; /* Светлая линия */
+    background-color: #f9f9f9; /* Светлый фон */
+    color: #333; /* Тёмный текст */
     border-radius: 8px;
 }
 
@@ -68,7 +75,7 @@ h2 {
     font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
-    background-color: #007bff;
+    background-color: #007bff; /* Синий */
     color: white;
     border-radius: 8px;
     flex-grow: 1;
@@ -91,43 +98,43 @@ h2 {
 }
 
 .btn-primary {
-    background-color: #007bff;
+    background-color: #007bff; /* Синий */
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: #0056b3;
+    background-color: #0056b3; /* Тёмно-синий */
 }
 
 .btn-edit {
-    background-color: #ffc107;
+    background-color: #ffc107; /* Жёлтый */
     color: white;
 }
 
 .btn-edit:hover {
-    background-color: #e0a800;
+    background-color: #e0a800; /* Тёмно-жёлтый */
 }
 
 .btn-delete {
-    background-color: #dc3545;
+    background-color: #dc3545; /* Красный */
     color: white;
 }
 
 .btn-delete:hover {
-    background-color: #c82333;
+    background-color: #c82333; /* Тёмно-красный */
 }
 
 .btn-view-parts {
-    background-color: #28a745;
+    background-color: #28a745; /* Зелёный */
     color: white;
 }
 
 .btn-view-parts:hover {
-    background-color: #218838;
+    background-color: #218838; /* Тёмно-зелёный */
 }
 
 .btn-back {
-    background-color: #6c757d;
+    background-color: #6c757d; /* Серый */
     color: white;
     text-decoration: none;
     padding: 10px 20px;
@@ -138,6 +145,6 @@ h2 {
 }
 
 .btn-back:hover {
-    background-color: #5a6268;
+    background-color: #5a6268; /* Тёмно-серый */
 }
 

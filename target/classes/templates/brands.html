@@ -9,7 +9,7 @@
         <div class="header">
             <h2>Список производителей</h2>
 <a href="/brands/new" class="add-brand">Добавить нового производителя</a>
-
+<a href="http://176.124.200.228:8080/" class="btn btn-server">На главную</a>
 
             <!-- Кнопка для перехода на страницу сборки компьютера (для общего доступа, не привязанной к конкретному бренду) -->
  
@@ -24,7 +24,7 @@
                 <span class="brand-name" th:text="${brand.brandName}"></span>
                 <div class="action-buttons">
                     <!-- Удалена кнопка "Собрать компьютер" для каждого бренда -->
-                    <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-view">Просмотреть модели</a>
+                    <a th:href="@{'/brands/' + ${brand.id} + '/models'}" class="btn btn-view">Просмотреть комплектующие</a>
                     <a th:href="@{'/brands/edit/' + ${brand.id}}" class="btn btn-edit">Редактировать</a>
                     <a th:href="@{'/brands/delete/' + ${brand.id}}" class="btn btn-delete">Удалить</a>
                 </div>

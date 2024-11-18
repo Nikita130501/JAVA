@@ -1,0 +1,149 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8f8; /* Светлый фон */
+    color: #333; /* Тёмный текст */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Расположение элементов сверху вниз */
+    align-items: center;
+    min-height: 100vh; /* Высота экрана */
+}
+
+/* Заголовок */
+h1 {
+    font-size: 32px;
+    color: #333; /* Тёмный текст */
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.btn-home {
+    padding: 12px 24px;
+    background-color: #e53946 !important; /* Яркий красный цвет */
+    color: #007bff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease !important;
+    margin-bottom: 20px !important; /* Отступ снизу */
+    align-self: center !important; /* Центрировать кнопку */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important; /* Лёгкая тень */
+}
+
+.btn-home:hover {
+    background-color: #d32f2f !important; /* Более тёмный красный для ховера */
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2) !important; /* Более выраженная тень при наведении */
+}
+
+
+/* Контейнер */
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 30px;
+    background-color: #fff; /* Белый фон */
+    border-radius: 12px; /* Скругленные углы */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Лёгкая тень для контейнера */
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Расстояние между блоками */
+    flex-grow: 1; /* Растягивать, чтобы заполнить высоту */
+    overflow-y: auto; /* Добавить прокрутку при переполнении */
+    padding-top: 40px; /* Больше отступа сверху */
+}
+
+/* Кнопка для сборки */
+button[type="submit"] {
+    padding: 14px 28px;
+    background-color: #007bff; /* Синий */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Скругленные углы */
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    margin-top: 30px;
+    align-self: center; /* Центрировать кнопку */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Тёмно-синий */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Более выраженная тень при наведении */
+}
+
+/* Группа кнопок */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Отступ между кнопками */
+}
+
+/* Кнопки */
+.btn {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 8px; /* Скругленные углы */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+/* Кнопка "Собрать компьютер" */
+.btn-submit {
+    background-color: #007bff; /* Синий */
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Тёмно-синий */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Тень при наведении */
+}
+
+/* Ввод и выбор */
+select, input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Подсчёт padding в ширину */
+    transition: border-color 0.3s ease;
+}
+
+select:focus, input[type="text"]:focus, input[type="number"]:focus {
+    border-color: #007bff; /* Синий цвет при фокусе */
+    outline: none; /* Убираем стандартное обрамление */
+}
+
+/* Заголовки для секций */
+h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Стили для отдельных блоков */
+div {
+    margin-bottom: 30px;
+}
+
+/* Стили для ссылок */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

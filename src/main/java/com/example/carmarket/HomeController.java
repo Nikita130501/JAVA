@@ -9,7 +9,7 @@ public class HomeController {
 
     @GetMapping("/")
     public String home(Model model) {
-        model.addAttribute("message", "Welcome to the Car Market!");
+        model.addAttribute("message", "Добро пожалоавать!");
         return "home";  // Это будет ссылаться на шаблон home.html
     }
 }
